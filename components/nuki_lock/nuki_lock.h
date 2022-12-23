@@ -66,6 +66,7 @@ class NukiLock : public lock::Lock, public PollingComponent {
         Nuki::KeyTurnerState retrievedKeyTurnerState_;
         Handler *handler_;
         bool status_update_;
+        int counter = 0;
         bool unpair_;
         bool open_latch_;
 };
